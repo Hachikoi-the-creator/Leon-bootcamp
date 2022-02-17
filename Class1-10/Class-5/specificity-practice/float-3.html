@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FLOAT 3</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    header,
+    section,
+    footer {
+      height: 20vh;
+      border: 3px solid steelblue;
+      float: left;
+    }
+    header,
+    footer {
+      width: 100vw;
+    }
+    section {
+      height: 60vh;
+      width: 20%;
+    }
+    /* 2nd section */
+    header + section + section {
+      width: 40%;
+    }
+  </style>
+  <body>
+    <header></header>
+    <section></section>
+    <section></section>
+    <section></section>
+    <section></section>
+    <footer></footer>
+  </body>
+</html>

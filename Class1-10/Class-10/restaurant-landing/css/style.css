@@ -1,0 +1,96 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/*****
+/* navbar
+/*****/
+body {
+  font-family: sans-serif;
+}
+a {
+  text-decoration: none;
+}
+header {
+  background: transparent;
+}
+header ul {
+  float: right;
+}
+header li {
+  background-color: rgba(255, 255, 255, 0.356);
+  list-style: none;
+  padding: 15px;
+  float: left;
+}
+header a {
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+}
+/*****
+/* hero-section
+/*****/
+.hero,
+.hero img {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+}
+.hero {
+  clear: both;
+}
+.hero img {
+  width: 100vw;
+}
+.hero h1 {
+  margin-top: 20%;
+  font-size: 3rem;
+  width: 50%;
+}
+.search-bar i {
+  /* width: 30px; */
+  position: relative;
+  top: 30px;
+  left: 10px;
+}
+.hero input {
+  padding: 10px 60px;
+  border-radius: 7px 0 0 7px;
+}
+.hero form + a {
+  border-radius: 0 7px 7px 0;
+  padding: 11px 20px;
+  background: #ff8800;
+  position: relative;
+  bottom: 32px;
+  left: 290px;
+}
+.hero h1,
+.hero .search-bar,
+.social--main {
+  margin-left: 10%;
+}
+.socials a {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.356);
+}
+/*****
+/* about-sus-section
+/*****/

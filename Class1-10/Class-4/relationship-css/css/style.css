@@ -1,0 +1,64 @@
+/* GENERIC STYLES */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --accent-color: rgb(59, 156, 59);
+}
+
+body {
+  margin-top: 2rem;
+  padding: 20px;
+  border: 4px solid var(--accent-color);
+  width: 70%;
+  margin-inline: 15%;
+  background: rgb(140, 215, 224);
+  color: white;
+}
+
+h1,
+h2,
+ul > li {
+  text-transform: capitalize;
+}
+
+p {
+  margin-bottom: 2rem;
+}
+
+a {
+  color: var(--accent-color);
+}
+/* HEADER */
+h1 {
+  font-size: 25px;
+  font-weight: normal;
+  font-style: italic;
+  text-align: center;
+}
+
+header ul {
+  margin-right: 40%;
+}
+
+header p {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+main {
+  margin-bottom: 2rem;
+}
+
+/* LOGO */
+main > img {
+  float: right;
+  width: 150px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+}

@@ -1,0 +1,100 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+section {
+  background-color: lightskyblue;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+main section,
+.bottom section {
+  width: 33.3333%;
+  height: 300px;
+  border: 1px solid black;
+  float: left;
+}
+.bottom section {
+  width: 50%;
+}
+section {
+  background-color: lightskyblue;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+/* On mobile, please make all sections stack  */
+/* On tablet, please make the sections in main stack  */
+/* On laptop, please keep the normal layout, but everything should be light green */
+/* @media screen and (max-width: 500px) {
+  main > section {
+    width: 100%;
+  }
+  .bottom section {
+    width: 100%;
+  }
+  section {
+    background-color: white !important;
+  }
+}
+@media screen and (max-width: 900px) {
+  main > section {
+    width: 100%;
+  }
+  section {
+    background-color: white !important;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  section {
+    background-color: lightgreen;
+  }
+} */
+
+/* On larger screens, please keep the normal layout, but everything should be light blue */
+
+/* WTHHHHHHHHHHHHHHHHH LEON */
+@media (min-width: 10px) and (max-width: 500px) {
+  body * {
+    background-color: red;
+  }
+}
+@media (min-width: 501px) and (max-width: 700px) {
+  body * {
+    background-color: blue;
+  }
+}
+@media all and (min-width: 701px) {
+  body * {
+    background-color: rgb(107, 107, 255);
+  }
+}
+@media all and (min-width: 1000px) {
+  body * {
+    background-color: rgb(255, 139, 197);
+  }
+}
+/* stream at 2:31:00 */

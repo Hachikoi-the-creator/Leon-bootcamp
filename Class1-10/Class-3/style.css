@@ -1,0 +1,82 @@
+:root {
+  --main-color: rgb(189, 247, 255);
+  --secondary-color: rgb(128, 219, 212);
+  --shady-color: rgb(255, 218, 218);
+  --bg-color: rgb(9, 22, 100);
+}
+
+body {
+  background-color: rgb(241, 241, 241);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+p {
+  width: fit-content;
+}
+/* HEADER */
+.main {
+  background-color: var(--bg-color);
+  height: 400px;
+}
+.sub-main {
+  width: 80%;
+  margin-inline: 10%;
+  display: inline;
+}
+.main h1 {
+  font-size: 3rem;
+  font-weight: 300;
+}
+.main header p,
+.main header ul {
+  float: right;
+}
+li {
+  display: inline;
+}
+
+/* MAIN CONTENT */
+.events {
+  width: 80%;
+  margin-inline: 10%;
+  height: fit-content;
+  border: 1px solid salmon;
+  margin: 10%;
+  margin-bottom: 20%;
+  columns: 3 auto;
+
+  background: linear-gradient(
+    rgba(230, 100, 100, 0.575),
+    hsla(235, 100%, 69%, 0.568)
+  );
+  border-radius: 7px;
+}
+
+/* FOOTER */
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  color: var(--main-color);
+  background: linear-gradient(#e66465, #5d6bff);
+}
+footer > div {
+  width: 80%;
+  margin-inline: 10%;
+}
+footer p {
+  float: left;
+  width: fit-content;
+  margin-top: 3rem;
+  /* border: 1px solid salmon; */
+}
+footer ul {
+  margin: 3rem;
+  float: right;
+}
+footer li {
+  margin-left: 1rem;
+}

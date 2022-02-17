@@ -1,0 +1,185 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+a {
+  border-radius: 2px;
+}
+/******************************************
+/* BASE STYLES
+/*******************************************/
+nav,
+a,
+.hero {
+  background: grey;
+  color: whitesmoke;
+  text-decoration: none;
+}
+body {
+  text-align: center;
+}
+nav {
+  width: 100%;
+  float: left;
+  padding-bottom: 10%;
+}
+nav li {
+  list-style: none;
+  float: left;
+  padding: 10px;
+}
+nav li:nth-child(3),
+nav li:nth-child(4) {
+  margin-left: 30%;
+}
+
+/* HERO SECTION */
+.hero {
+  clear: both;
+  margin-bottom: 10%;
+}
+.hero p {
+  width: 80%;
+  margin-left: 10%;
+}
+.hero span {
+  display: block;
+  padding: 20px;
+}
+.hero span:nth-child(4) {
+  color: black;
+}
+.play-btn {
+  fill: whitesmoke;
+  right: 60px;
+  top: 45px;
+  position: relative;
+  width: 20px;
+}
+
+/* WHY SECTION */
+.why-sec {
+  clear: both;
+
+  margin-bottom: 5%;
+}
+.why-sec h2,
+.why-sec p {
+  width: 50%;
+  margin-left: 25%;
+  padding: 10px;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+.item-sec {
+  padding-bottom: 10%;
+  background-color: #dbdfe2;
+}
+.fake-img {
+  width: 200px;
+  height: 100px;
+  background: rebeccapurple;
+  margin-left: 20%;
+}
+.item-sec > * {
+  width: 50%;
+  float: left;
+  padding: 5%;
+}
+.item-sec * {
+  padding: 10px;
+  background: #dbdfe2;
+}
+.item-sec p {
+  margin-bottom: 10px;
+}
+.item-sec a {
+  padding: 5px 15px;
+  border: 1px solid black;
+  color: black;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+.volunteer {
+  width: 80%;
+  margin: 10% 20%;
+  clear: both;
+  position: relative;
+  padding-bottom: 90px;
+}
+.volunteer * {
+  width: inherit;
+}
+.volunteer a {
+  width: fit-content;
+  position: absolute;
+  left: 35%;
+  padding: 5px 15px;
+  border: 1px solid black;
+  color: black;
+  background: whitesmoke;
+  margin-top: 5%;
+}
+/******************************************
+/* FOOTER
+/*******************************************/
+.foot,
+.foot-bottom,
+.foot a {
+  text-align: start;
+  background: #161f2a;
+}
+.foot-left {
+  background: #161f2a;
+  width: 50%;
+  float: left;
+}
+.foot-left svg {
+  padding-top: 10px;
+  width: 50px;
+  fill: whitesmoke;
+}
+.foot-left p {
+  color: whitesmoke;
+  padding: 10px;
+  text-align: start;
+}
+.foot-left span {
+  padding: 10px;
+  color: whitesmoke;
+}
+.foot-right {
+  float: left;
+  width: 50%;
+}
+.foot-right p {
+  text-align: end;
+  padding: 7px;
+  color: whitesmoke;
+}
+.foot-bottom {
+  clear: both;
+  width: 100%;
+  padding-top: 20px;
+  color: whitesmoke;
+  border-top: 1px solid whitesmoke;
+  text-align: center;
+}

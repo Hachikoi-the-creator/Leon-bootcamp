@@ -1,0 +1,129 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+/* better in the eyes xD */
+body {
+  background-color: antiquewhite;
+}
+.nav {
+  width: 100%;
+  background-color: black;
+}
+.nav ul > li {
+  color: rgb(243, 239, 239);
+  float: left;
+  list-style: none;
+  padding: 10px;
+  margin-right: 20px;
+}
+
+/******************************************
+/* ACTUAL LAYOUT :P 
+/*******************************************/
+.title {
+  display: block;
+  width: 100%;
+  float: left;
+}
+.left,
+.right {
+  width: 50%;
+  float: left;
+  position: relative;
+}
+
+/* LEFT SECTION */
+.left img {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+}
+
+.left p,
+.left h2 {
+  left: 1rem;
+  position: absolute;
+  color: white;
+}
+
+.left p {
+  bottom: 3rem;
+}
+
+.left h2 {
+  bottom: 5rem;
+}
+
+/* RIGHT SECTION */
+.right div {
+  position: relative;
+  width: 50%;
+  float: left;
+  padding: 10px;
+}
+
+.right img {
+  width: 100%;
+}
+
+.right h3 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  left: 10px;
+  color: white;
+}
+
+/* BOTOM SECTION */
+.bottom {
+  width: 100%;
+  float: right;
+  position: relative;
+}
+.bottom > div {
+  width: 33.3%;
+  float: left;
+}
+.bottom > *,
+.quick-fix {
+  padding-inline: 10px;
+}
+.bottom img {
+  width: 100%;
+  height: 200px;
+}
+.bottom h3,
+.bottom p {
+  color: whitesmoke;
+  position: absolute;
+}
+.bottom h3 {
+  bottom: 6rem;
+}
+.bottom p {
+  width: 30%;
+  word-wrap: break-word;
+
+  bottom: 2rem;
+}
