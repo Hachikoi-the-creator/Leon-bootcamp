@@ -24,6 +24,7 @@
 /*****/
 body {
   font-family: sans-serif;
+  overflow-x: hidden;
 }
 a {
   text-decoration: none;
@@ -91,6 +92,106 @@ header a {
   color: black;
   background-color: rgba(255, 255, 255, 0.356);
 }
+.socials {
+  margin-bottom: 50%;
+}
 /*****
 /* about-sus-section
 /*****/
+.about-us img {
+  width: 100%;
+  z-index: -1;
+  top: 500px;
+  position: relative;
+}
+.about-us h2,
+.about-us p,
+.about-us span {
+  margin: 20px 0 0 30%;
+  position: relative;
+  top: 70px;
+  width: 60%;
+  background-color: rgba(255, 255, 255, 0.356);
+}
+.about-us a {
+  padding: 10px 17px;
+  background: #ff8800;
+  color: whitesmoke;
+  border-radius: 7px;
+  position: relative;
+  left: 30%;
+  top: 90px;
+}
+.about-us {
+  margin-bottom: 20vw;
+}
+/*****
+/* food display section
+/*****/
+.food * {
+  margin: 10px;
+  color: black;
+}
+.food {
+  text-align: center;
+  width: 80%;
+  margin: 0 10%;
+}
+.food > a {
+  color: #ff8800;
+}
+.food ul li {
+  display: inline-block;
+  border-bottom: 1px solid black;
+}
+.food img {
+  width: 20%;
+  margin-bottom: 2vw;
+  border-radius: 3px;
+}
+/*****
+/* opening schedule section
+/*****/
+.opening {
+  font-size: 10px;
+}
+.opening * {
+  margin-top: 30px;
+}
+.opening .orange {
+  color: #ff8800;
+}
+.opening .small-text {
+  font-size: 2em;
+  font-weight: 200;
+}
+.opening .bold {
+  font-weight: 700;
+}
+.opening img {
+  width: 100vw;
+}
+.opening .text {
+  background: rgba(255, 255, 255, 0.753);
+  position: relative;
+  top: 500px;
+  text-align: center;
+  display: block;
+  width: fit-content;
+  margin-left: 40%;
+  border-radius: 7px;
+}
+.opening .right,
+.opening .left {
+  width: 49vw;
+}
+.opening .right {
+  float: right;
+}
+.opening .left {
+  float: left;
+}
+.opening > span {
+  font-size: 2em;
+  text-shadow: #ff8800 0.1px 0.1px 1px;
+}
