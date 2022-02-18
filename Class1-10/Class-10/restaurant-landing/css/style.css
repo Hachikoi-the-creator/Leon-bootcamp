@@ -135,7 +135,7 @@ header a {
 .food {
   text-align: center;
   width: 80%;
-  margin: 0 10%;
+  margin: 0 15%;
 }
 .food > a {
   color: #ff8800;
@@ -155,7 +155,7 @@ header a {
 .opening {
   font-size: 10px;
 }
-.opening * {
+.opening {
   margin-top: 30px;
 }
 .opening .orange {
@@ -194,4 +194,41 @@ header a {
 .opening > span {
   font-size: 2em;
   text-shadow: #ff8800 0.1px 0.1px 1px;
+}
+/*****
+/* Last section section T.T
+/*****/
+.end-pain {
+  font-family: inherit;
+  height: 500px;
+  text-align: center;
+  /* rgba layer above the bg-img */
+  background: center / contain no-repeat
+      radial-gradient(rgba(228, 228, 228, 0.671), rgba(255, 255, 255, 0.383)),
+    #eee 35% url("../fruit-bg.jpg");
+}
+.end-pain .orange {
+  padding-top: 10%;
+  color: #ff8800;
+  font-size: 0.5rem;
+}
+.end-pain img {
+  border-radius: 50vw;
+  width: 80px;
+  height: 80px;
+}
+.end-pain .stars {
+  display: inline-block;
+  text-align: center;
+  clear: both;
+  width: 300px;
+  height: 90px;
+}
+.stars svg {
+  fill: yellow;
+  width: 30px;
+}
+.end-pain p {
+  width: 80%;
+  margin-left: 10%;
 }
