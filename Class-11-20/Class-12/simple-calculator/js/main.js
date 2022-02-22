@@ -1,26 +1,28 @@
-let total = 0
+const resetBtn = document.getElementById("reset-btn");
+const plusTree = document.getElementById("plus-3");
+const plusNine = document.getElementById("plus-9");
+const lessTwo = document.getElementById("less-2");
 
-document.querySelector('#pumpkin').addEventListener('click', makeZero)
-document.querySelector('#dominosPizza').addEventListener('click', jumanji)
-document.querySelector('#zebra').addEventListener('click', add9)
-document.querySelector('#cantThinkOfAnything').addEventListener('click', sub2)
+const placeResult = document.getElementById("place-result");
+let counter = 0;
 
-function makeZero() {
-  total = 0
-  document.querySelector('#placeToPutResult').innerText = total
-}
-
-function jumanji() {
-  total = total + 3
-  document.querySelector('#placeToPutResult').innerText = total
-}
-
-function add9() {
-  total = total + 9
-  document.querySelector('#placeToPutResult').innerHTML = total
-}
-
-function sub2() {
-  total = total - 2
-  document.querySelector('#placeToPutResult').innerHTML = total
-}
+// n -> 0
+resetBtn.addEventListener("click", () => {
+  counter = 0;
+  placeResult.textContent = counter;
+});
+// n + 3
+plusTree.addEventListener("click", () => {
+  counter += 3;
+  placeResult.textContent = counter;
+});
+// n + 9
+plusNine.addEventListener("click", () => {
+  counter += 9;
+  placeResult.textContent = counter;
+});
+// n - 2
+lessTwo.addEventListener("click", () => {
+  counter -= 2;
+  placeResult.textContent = counter;
+});
