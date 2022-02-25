@@ -1,18 +1,22 @@
+/*********  
+Basic stuff
+*********/
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-/*********  
-LAYOUT
-*********/
+
 main {
   height: 100vh;
   background: center / contain no-repeat
       radial-gradient(rgba(228, 228, 228, 0.671), rgba(255, 255, 255, 0.383)),
-    #eee 35% url("./techo-bg.jpg");
+    #eee 35% url("./img/techo-bg.jpg");
 }
 
+/*********  
+Navbar
+*********/
 .navbar {
   height: fit-content;
   display: flex;
@@ -27,14 +31,50 @@ main {
   padding: 10px;
 }
 
-.container {
-  width: 80%;
-  padding: 10%;
-}
 /*********
-STYLES
+Screen
 *********/
+.buttons {
+  padding-block: 20px;
+  display: flex;
+  width: 80%;
+  margin-left: 10%;
+  flex-direction: column;
+}
 
+.buttons .screen,
+.buttons .screen * {
+  width: 100%;
+}
+
+.buttons input {
+  border-radius: 3px;
+  font-size: 20px;
+  text-align: right;
+  padding-block: 7px;
+}
+
+/*********
+Buttons
+*********/
+.buttons > div {
+  display: flex;
+  width: 100%;
+  background: rgba(255, 143, 143, 0.671);
+}
+
+.buttons > div > div {
+  width: 25%;
+  text-align: center;
+  padding: 10px;
+  border-radius: 3px;
+  border-left: 1.5px solid rgba(255, 0, 0, 0.281);
+  border-top: 1.5px solid rgba(255, 0, 0, 0.383);
+}
+
+.buttons > div > div:hover {
+  cursor: pointer;
+}
 /*********
 HOVER STATES
 *********/
