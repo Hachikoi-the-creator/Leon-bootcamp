@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/*********  
+LAYOUT
+*********/
+main {
+  height: 100vh;
+  background: center / contain no-repeat
+      radial-gradient(rgba(228, 228, 228, 0.671), rgba(255, 255, 255, 0.383)),
+    #eee 35% url("./techo-bg.jpg");
+}
+
+.navbar {
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  background: rgb(203, 150, 255);
+}
+
+.navbar > * {
+  list-style: none;
+  padding: 10px;
+}
+
+.container {
+  width: 80%;
+  padding: 10%;
+}
+/*********
+STYLES
+*********/
+
+/*********
+HOVER STATES
+*********/

@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* transition: all 0.3s ease-in-out; */
+}
+body {
+  background-color: rgb(255, 192, 203);
+}
+.hidde {
+  visibility: hidden;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-block: 13px;
+  border-block: rgb(62, 255, 249) solid 1px;
+}
+.options button {
+  color: rgb(0, 0, 128);
+  border: none;
+  background-color: rgb(172, 216, 255);
+  padding: 10px 21px;
+}
