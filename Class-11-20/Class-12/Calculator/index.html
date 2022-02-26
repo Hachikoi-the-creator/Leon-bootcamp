@@ -5,78 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Calculator 3000</title>
+    <title>Calculator V2</title>
 
-    <link rel="stylesheet" href="./style.css" />
-    <script
-      src="https://kit.fontawesome.com/4b55c61616.js"
-      crossorigin="anonymous"
-    ></script>
+    <link rel="stylesheet" href="style.css" />
     <script src="./app.js" defer></script>
   </head>
   <body>
-    <header>
-      <ul class="navbar">
-        <li>LOGO</li>
-        <li>something</li>
-        <li>something</li>
-        <li>something</li>
-      </ul>
-    </header>
-    <main>
-      <h1 class="title">Calculator 3000</h1>
-      <h3><span>-</span><span id="result">Decimal</span><span>-</span></h3>
-      <!--  -->
-      <section class="buttons">
-        <div class="screen">
-          <form class="move">
-            <input id="input1" type="numbers" placeholder="0" />
-          </form>
-          <div id="clear">C</div>
-          <form>
-            <input id="input2" type="numbers" placeholder="0" />
-          </form>
-        </div>
-        <div class="row1">
-          <div class="hexa dec bin">0</div>
-          <div>*</div>
-          <div>/</div>
-          <div>+</div>
-        </div>
-        <div class="row2">
-          <div class="hexa dec bin">1</div>
-          <div class="hexa dec">2</div>
-          <div class="hexa dec">3</div>
-          <div>-</div>
-        </div>
-        <div class="row3">
-          <div class="hexa dec">4</div>
-          <div class="hexa dec">5</div>
-          <div class="hexa dec">6</div>
-          <div>=</div>
-        </div>
-        <div class="row4">
-          <div class="hexa dec">7</div>
-          <div class="hexa dec">8</div>
-          <div class="hexa dec">9</div>
-          <div id="to-bin">BIN</div>
-        </div>
-        <div class="row5">
-          <div>A</div>
-          <div>B</div>
-          <div>C</div>
-          <div id="to-dec">DEC</div>
-        </div>
-        <div class="row6">
-          <div>D</div>
-          <div>E</div>
-          <div>F</div>
-          <div id="to-hex">HEX</div>
-        </div>
-        <div class="screen bottom-input">
-          <form><input id="input1" type="numbers" placeholder="result" /></form>
-        </div>
-      </section>
+    <h1>CALCULATOR 6700</h1>
+    <h3><span>-</span><span id="mode">mode</span><span>-</span></h3>
+    <!--  -->
+    <main class="actions">
+      <form class="move">
+        <input id="input1" type="text" placeholder="0" class="move" />
+      </form>
+      <div class="move" id="operation">none</div>
+      <form class="move">
+        <input id="input2" type="text" placeholder="0" class="move" />
+      </form>
+      <div class="rows">
+        <div>+</div>
+        <div>-</div>
+        <div>/</div>
+        <div>*</div>
+      </div>
+      <div class="rows">
+        <div>C</div>
+        <div id="to-bin">BIN</div>
+        <div id="to-dec">DEC</div>
+        <div id="to-hex">HEXA</div>
+      </div>
+      <div class="result">
+        <form class="move">
+          <input id="result" type="text" placeholder="0" class="move" />
+        </form>
+      </div>
     </main>
   </body>
 </html>

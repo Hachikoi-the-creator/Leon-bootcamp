@@ -1,8 +1,8 @@
 // when click on any mode, show the active mode on top, also keep a bool variable
-const toBin = document.querySelector("#to-bin");
-const toDec = document.querySelector("#to-dec");
-const toHex = document.querySelector("#to-hex");
-const showMode = document.querySelector("#result");
+const toBin = document.getElementById("to-bin");
+const toDec = document.getElementById("to-dec");
+const toHex = document.getElementById("to-hex");
+const showMode = document.getElementById("mode");
 // ---
 let onBinary = false;
 let onDecimal = true;
