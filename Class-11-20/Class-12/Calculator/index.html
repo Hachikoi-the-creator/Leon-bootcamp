@@ -12,6 +12,7 @@
       src="https://kit.fontawesome.com/4b55c61616.js"
       crossorigin="anonymous"
     ></script>
+    <script src="./app.js" defer></script>
   </head>
   <body>
     <header>
@@ -23,48 +24,57 @@
       </ul>
     </header>
     <main>
-      <!-- <object type="image/svg+xml" data="./img/Vector 1.svg">
-        Your browser does not support SVG
-      </object> -->
+      <h1 class="title">Calculator 3000</h1>
+      <h3><span>-</span><span id="result">Decimal</span><span>-</span></h3>
+      <!--  -->
       <section class="buttons">
         <div class="screen">
-          <form><input class="row1" type="numbers" placeholder="0" /></form>
+          <form class="move">
+            <input id="input1" type="numbers" placeholder="0" />
+          </form>
+          <div id="clear">C</div>
+          <form>
+            <input id="input2" type="numbers" placeholder="0" />
+          </form>
         </div>
         <div class="row1">
-          <div>C</div>
+          <div class="hexa dec bin">0</div>
           <div>*</div>
           <div>/</div>
           <div>+</div>
         </div>
         <div class="row2">
-          <div>1</div>
-          <div>2</div>
-          <div>3</div>
+          <div class="hexa dec bin">1</div>
+          <div class="hexa dec">2</div>
+          <div class="hexa dec">3</div>
           <div>-</div>
         </div>
         <div class="row3">
-          <div>4</div>
-          <div>5</div>
-          <div>6</div>
+          <div class="hexa dec">4</div>
+          <div class="hexa dec">5</div>
+          <div class="hexa dec">6</div>
           <div>=</div>
         </div>
         <div class="row4">
-          <div>7</div>
-          <div>8</div>
-          <div>9</div>
-          <div>BIN</div>
+          <div class="hexa dec">7</div>
+          <div class="hexa dec">8</div>
+          <div class="hexa dec">9</div>
+          <div id="to-bin">BIN</div>
         </div>
         <div class="row5">
           <div>A</div>
           <div>B</div>
           <div>C</div>
-          <div>DEC</div>
+          <div id="to-dec">DEC</div>
         </div>
         <div class="row6">
           <div>D</div>
           <div>E</div>
           <div>F</div>
-          <div>HEX</div>
+          <div id="to-hex">HEX</div>
+        </div>
+        <div class="screen bottom-input">
+          <form><input id="input1" type="numbers" placeholder="result" /></form>
         </div>
       </section>
     </main>
