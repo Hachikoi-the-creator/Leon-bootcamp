@@ -1,5 +1,5 @@
 /*
-- get the tempreature to change
+- get the temperature to change
 - get the formula and apply it to the gotten temp
 - write in the document the new conversion 
 */
