@@ -59,5 +59,9 @@ const smallEnough2 = (a, l) => a.every((e) => e <= l);
 
 //10 - Given an array of strings, return the string from shorter to longer
 function sortByLength(array) {
+  // if log a,b w/const months = ["Beg", "Life", "I", "To"]
+  /*"Beg" "Life"
+  "Life" "I"
+  "I" "To" */
   return array.sort((a, b) => a.length - b.length);
 }
