@@ -81,5 +81,26 @@ function minValue(values) {
   return parseInt(uniq.join(""), 10);//arr -> string; str -> int-base-10
 }
 
+// 6 - get the max difference between the len of the strings inside 2 given arrays
+function mxdiflg(a1, a2) {
+  let max1 = 0;
+  let min1 = 0;
+  let max2 = 0;
+  let min2 = 0;
+  for (let i = 0; i < a1.length; i++) {
+    if (a1[i].lenght > max1) {
 
-console.log(minValue([1, 3, 1]));//13
+    }
+  }
+  for (let i = 0; i < a2.length; i++) {
+
+  }
+}
+
+// 7x - weird instructions, straight forward code, SUKI
+function mxdiflg(a1, a2) {
+  if (a1.length === 0 || a2.length === 0) return -1;
+  let l1 = a1.map(str => str.length);
+  let l2 = a2.map(str => str.length);
+  return Math.max(Math.max(...l1) - Math.min(...l2), Math.max(...l2) - Math.min(...l1));
+}
