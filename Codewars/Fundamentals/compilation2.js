@@ -104,3 +104,17 @@ function mxdiflg(a1, a2) {
   let l2 = a2.map(str => str.length);
   return Math.max(Math.max(...l1) - Math.min(...l2), Math.max(...l2) - Math.min(...l1));
 }
+
+// 8 - factorial of a positive number n
+function factorial(n) {
+  // Creates an array whit all the elents from n to 1
+  const fullArr = Array(n)
+    .fill()
+    .map((_, index) => n - index);
+
+  // sum up all the items in the array
+  const res = fullArr.reduce((a, b) => a += b);
+
+  return (res);
+}
+
