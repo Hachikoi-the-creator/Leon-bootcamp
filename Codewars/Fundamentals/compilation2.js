@@ -105,16 +105,12 @@ function mxdiflg(a1, a2) {
   return Math.max(Math.max(...l1) - Math.min(...l2), Math.max(...l2) - Math.min(...l1));
 }
 
-// 8 - factorial of a positive number n
+// 8x - factorial of a positive number n, throw exeption if n < 0 || n > 12
 function factorial(n) {
-  // Creates an array whit all the elents from n to 1
-  const fullArr = Array(n)
-    .fill()
-    .map((_, index) => n - index);
 
-  // sum up all the items in the array
-  const res = fullArr.reduce((a, b) => a += b);
-
-  return (res);
+  if (n < 0 || n > 12) {
+    // custom error syntax :D
+    throw new RangeError('Parameter must be between ' + 0 + ' and ' + 12);
+  }
+  return n < 2 ? 1 : n * factorial(n - 1);
 }
-
