@@ -114,3 +114,26 @@ function factorial(n) {
   }
   return n < 2 ? 1 : n * factorial(n - 1);
 }
+
+// 9 - Join 2 arrays
+function arrayDiff(a, b) {
+  if (!a.length) { return []; }
+  else if (!b.length) { return a; }
+  else {
+    // stores the ones removed, yeah
+    let res = a.filter(item => !b.includes(item));
+    return res;
+  }
+}
+function array_diff(a, b) {
+  // filter works on empty arrays :O
+  return a.filter(e => !b.includes(e));
+}
+
+// 10x - extract the domain name from an url
+function domainName(url) {
+  return url.replace('http://', '')
+    .replace('https://', '')
+    .replace('www.', '')
+    .split('.')[0];
+}
