@@ -3,19 +3,73 @@
 /*******************************************/
 
 /* Box Model Hack */
-*{
+* {
   box-sizing: border-box;
 }
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-img{
+img {
   display: block;
   margin: 0 auto;
 }
-
-
+body {
+  background-color: rgba(253, 122, 122, 0.507);
+}
+main {
+  padding: 13px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: rgba(253, 122, 122, 0.507);
+  width: 80%;
+  margin-left: 10%;
+}
+main > * {
+  padding: 17px;
+}
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+.place-instructions {
+  width: 30ch;
+}
+
+.input-sec {
+  grid-area: 1/1;
+}
+
+.input-sec > * {
+  margin: 10px;
+}
+
+.instructions {
+  grid-area: 1 / span 2;
+}
+
+.ref-img {
+  grid-area: 2/1;
+  /* transform: translateX(55%); */
+}
+
+img {
+  border-radius: 7px !important;
+  height: 40vh;
+}
+/* .ref-img
+.instructions
+.input-sec */
+
+@media screen and (max-width: 700px) {
+  .ref-img {
+    transform: translateX(0);
+  }
+
+  main,
+  .input-sec > * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
