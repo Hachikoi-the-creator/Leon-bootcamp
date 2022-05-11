@@ -23,3 +23,30 @@ function countSheeps(arrayOfSheep = []) {
 function countSheeps(arrayOfSheeps) {
   return arrayOfSheeps.filter(Boolean).length;
 }
+
+// 3 - find the str, and return index
+function findNeedle(haystack = []) {
+  const index = haystack.indexOf('needle');
+  return `found the needle at position ${index}`;
+}
+
+// 4 - return the max & min nu in an array
+const max = (list = []) => Math.max(...list);
+
+const min = (list = []) => Math.min(...list);
+
+// 5 - Return a murmur 1 bee..
+const countSheep = num => {
+  let val = '';
+
+  for (let i = 1; i <= num; i++) {
+    val += `${i} bee...`;
+  }
+
+  return val;
+};
+
+// 6 - a
+
+
+
