@@ -10,10 +10,12 @@ String.prototype.toAlternatingCase = (b = "daF") => {
 // String.prototype.toAlternatingCase("abcACB");
 // "comuniSM".toAlternatingCase();
 
-// 1 -  Convert a string to a number lmao
+
+// 1 -  Convert a string to a number lma
 const stringToNumber = (str) => +str;
 
-// 2 - Count the number of true items in the array
+
+// 2 - Count the number of true items in the arra
 function countSheeps(arrayOfSheep = []) {
   let counter = 0;
   arrayOfSheep.forEach(e => { if (e) counter++; });
@@ -24,16 +26,19 @@ function countSheeps(arrayOfSheeps) {
   return arrayOfSheeps.filter(Boolean).length;
 }
 
+
 // 3 - find the str, and return index
 function findNeedle(haystack = []) {
   const index = haystack.indexOf('needle');
   return `found the needle at position ${index}`;
 }
 
+
 // 4 - return the max & min nu in an array
 const max = (list = []) => Math.max(...list);
 
 const min = (list = []) => Math.min(...list);
+
 
 // 5 - Return a murmur 1 bee..
 const countSheep = num => {
@@ -46,7 +51,27 @@ const countSheep = num => {
   return val;
 };
 
-// 6 - a
+
+// 6 - bruh
+const checkEndsWith = (str = '', ed) => {
+  return str.endsWith(ed);
+};
 
 
+// 7 - a
+function areYouPlayingBanjo(name = "") {
+  return name.charAt(0).toLowerCase() == 'r' ?
+    `${name} plays banjo` :
+    `${name} does not play banjo`;
+}
+
+
+// 8 - Check if a triangle can be made whit the given 3 sides
+function isTriangle(a, b, c) {
+  const ordered = [a, b, c].sort((a, b) => a - b);
+  return ordered[0] + ordered[1] > ordered[2];
+}
+
+// another solution
+var isTriangle = (a, b, c) => Math.max(a, b, c) < (a + b + c) / 2;
 
