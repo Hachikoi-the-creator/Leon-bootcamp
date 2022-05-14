@@ -75,3 +75,10 @@ function isTriangle(a, b, c) {
 // another solution
 var isTriangle = (a, b, c) => Math.max(a, b, c) < (a + b + c) / 2;
 
+
+// 9 - return wheter the num is odd or even
+const even_or_odd = n => (n % 2) ? 'Odd' : 'Even';
+
+
+// 10 - basic string template
+const greet = (name) => `Hello ${name} howa are you today?`;
