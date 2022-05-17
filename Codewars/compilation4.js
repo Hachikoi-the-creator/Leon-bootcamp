@@ -67,6 +67,18 @@ function coompare(array1, array2) {
 }
 
 
-// 9 -
+// 9 - check if the amount of x & o is the same, 0 counts
+function XO(str = "") {
+  const x = [...str.toLowerCase()].filter(l => l === 'x').length;
+  const o = [...str.toLowerCase()].filter(l => l === 'o').length;
+  console.log(x === o);
+}
+
+// ! Cool regex
+function XO2(str) {
+  var a = str.replace(/x/gi, ''),
+    b = str.replace(/o/gi, '');
+  return a.length === b.length;
+}
 
 // 10 -
