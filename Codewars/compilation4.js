@@ -81,4 +81,11 @@ function XO2(str) {
   return a.length === b.length;
 }
 
-// 10 -
+// 10 - given a uint, return the maximun(value) combination possible
+function descendingOrder(n) {
+  return +[...n.toString()]// ['1','2','7']
+    .map(e => +e)// [1,2,7]
+    .sort((a, b) => b - a)//  [7,2,1]
+    // .sort()//  should work as well
+    .join('');//  721
+}
