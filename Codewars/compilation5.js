@@ -2,11 +2,11 @@
 // create an array of len = amount of words
 // search for a number in every word -> whit try; catch
 function order(words = '') {
-  const pussy = Array(words.split(' ').length);
+  const cast = Array(words.split(' ').length);
 
-  pussy.forEach((item, index) => {
+  cast.forEach((item, index) => {
     let position = -1;
-    console.log('pussy');
+    console.log('cast');
 
     [...item].forEach(letter => {
       try {
@@ -41,4 +41,25 @@ function nut(str = '') {
 
   }
 
+}
+
+// 2 - check if have enough gas to reach the next gas statino
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+  return distanceToPump / mpg <= fuelLeft;
+};
+
+
+// 3 - special check depending on lke in a post
+function likes(names = []) {
+  let extra = 0;
+  if (names.length > 3) extra = names.length - 2;
+
+  switch (names.length) {
+    case 0: return "no one likes this";
+    case 1: return `${names[0]} likes this`;
+    case 2: return `${names[0]} and ${names[1]} like this`;
+    case 3: return `${names[0]}, ${names[1]} and ${names[2]} like this`;
+    // more than 3 likes
+    default: return `${names[0]}, ${names[1]} and ${extra} others like this`;
+  }
 }
