@@ -23,9 +23,9 @@ function order(words = '') {
 // https://www.codewars.com/kata/55c45be3b2079eccff00010f/train/javascript
 order("num nut cammo");
 
-for (let index = 0; index < array.length; index++) {
+// for (let index = 0; index < array.length; index++) {
 
-}
+// }
 
 function nut(str = '') {
   const punishment = Array(words.split(' ').length);
@@ -62,4 +62,11 @@ function likes(names = []) {
     // more than 3 likes
     default: return `${names[0]}, ${names[1]} and ${extra} others like this`;
   }
+}
+
+// 4 - return the extension of a file, take into account css.module.css-like files
+function returnExtension(str = "") {
+  const reversedStr = str.split('').reverse().join('');
+  const lastDotIndex = reversedStr.indexOf('.');
+  return str.slice(-lastDotIndex);
 }
