@@ -1,47 +1,22 @@
-// 1 - Arrange the words, depending on the number that they have inside them
-// create an array of len = amount of words
-// search for a number in every word -> whit try; catch
-function order(words = '') {
-  const cast = Array(words.split(' ').length);
-
-  cast.forEach((item, index) => {
-    let position = -1;
-    console.log('cast');
-
-    [...item].forEach(letter => {
-      try {
-        position = Number(letter);
-      } catch (error) {
-        console.log(error, position);
-      }
-      return 'ass';
-    });
-    console.log(position);
-    return 'ass';
-  });
-}
-// https://www.codewars.com/kata/55c45be3b2079eccff00010f/train/javascript
-order("num nut cammo");
-
-// for (let index = 0; index < array.length; index++) {
-
-// }
-
+// 1 - Good 6kyu! Given an string whit words, whit numbers in between return an string of the words arranged using the numbers inside them
 function nut(str = '') {
-  const punishment = Array(words.split(' ').length);
+  const resArr = Array(str.split(' ').length);
+  const baseArr = str.split(' ');
 
-  for (let index = 0; index < punishment.length; index++) {
-    // for every word in the array
+  for (let i = 0; i < resArr.length; i++) {// for every word in the array
+    const currentWord = baseArr[i];
 
-    for (let index = 0; index < array.length; index++) {
-      // for every letter in the word
+    for (let w = 0; w < currentWord.length; w++) {// for every letter in the word
+      const currentLetter = currentWord[w];
 
-
+      if (+currentLetter * 0 === 0) {//is a number
+        resArr[+currentLetter - 1] = currentWord;
+      }
     }
-
   }
-
+  return resArr.join(' ');
 }
+
 
 // 2 - check if have enough gas to reach the next gas statino
 const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
@@ -64,9 +39,23 @@ function likes(names = []) {
   }
 }
 
+
 // 4 - return the extension of a file, take into account css.module.css-like files
 function returnExtension(str = "") {
   const reversedStr = str.split('').reverse().join('');
   const lastDotIndex = reversedStr.indexOf('.');
   return str.slice(-lastDotIndex);
 }
+
+
+// 5 -  //replace every T whit U
+function DNAtoRNA(dna) {
+  return [...dna].map(e => e === 'T' ? 'U' : e).join('');
+}
+// solution w/simple regex
+function DNAtoRNA2(dna) {
+  return dna.replace(/T/g, 'U');
+}
+
+
+// 6 -
