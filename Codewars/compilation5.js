@@ -16,6 +16,12 @@ function nut(str = '') {
   }
   return resArr.join(' ');
 }
+// better solution using sort 💀
+function orderPro(words) {
+  return words.split(' ').sort(function (a, b) {
+    return a.match(/\d/) - b.match(/\d/);
+  }).join(' ');
+}
 
 
 // 2 - check if have enough gas to reach the next gas statino
@@ -58,4 +64,39 @@ function DNAtoRNA2(dna) {
 }
 
 
-// 6 -
+// 6 - depending on the operation string, do that operaion (- + / *)
+function basicOp(operation, value1, value2) {
+  switch (operation) {
+    case '-':
+      return value1 - value2;
+    case '+':
+      return value1 + value2;
+    case '/':
+      return value1 / value2;
+    case '*':
+      return value1 * value2;
+    default:
+      return -1;//error code
+  }
+}
+
+// 7x - tribonacchi, sum up the last 3 values to get the new value of the array
+// will never know why didn't fucking worked :c
+function tribonacci(signature = [], resLen = 0) {
+  if (resLen === 0) return [];
+  if (resLen === 1) return [signature[1]];
+
+  for (let index = 0; index < resLen - 3; index++) {
+    const last3 = signature.slice(-3);
+    signature.push(last3.reduce().reduce((a, b) => a + b));
+  }
+  console.log(signature);
+}
+// Good valid response
+function tribonacci(signature, n) {
+  for (var i = 0; i < n - 3; i++) { // iterate n times
+    signature.push(signature[i] + signature[i + 1] + signature[i + 2]); // add last 3 array items and push 
+  }
+  return signature.slice(0, n); //return trib - length of n
+}
+
