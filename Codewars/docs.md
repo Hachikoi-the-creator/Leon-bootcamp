@@ -45,3 +45,52 @@ Warning
 The low-level functions call, delegatecall and staticcall return true as their first return value if the account called is non-existent, as part of the design of the EVM. Account existence must be checked prior to calling if needed.
 
 Exceptions can contain error data that is passed back to the caller in the form of error instances. The built-in errors Error(string) and Panic(uint256) are used by special functions, as explained below. Error is used for “regular” error conditions while Panic is used for errors that should not be present in bug-free code.
+
+# JS
+The flow of development usually looks like this:
+
+    An initial spec is written, with tests for the most basic functionality.
+    An initial implementation is created.
+    To check whether it works, we run the testing framework Mocha (more details soon) that runs the spec. While the functionality is not complete, errors are displayed. We make corrections until everything works.
+    Now we have a working initial implementation with tests.
+    We add more use cases to the spec, probably not yet supported by the implementations. Tests start to fail.
+    Go to 3, update the implementation till tests give no errors.
+    Repeat steps 3-6 till the functionality is ready.
+
+So, the development is iterative. We write the spec, implement it, make sure tests pass, then write more tests, make sure they work etc. At the end we have both a working implementation and tests for it.
+
+Let’s see this development flow in our practical case.
+
+The first step is already complete: we have an initial spec for pow. Now, before making the implementation, let’s use few JavaScript libraries to run the tests, just to see that they are working (they will all fail).
+
+Improving the spec
+
+What we’ve done is definitely a cheat. The function does not work: an attempt to calculate pow(3,4) would give an incorrect result, but tests pass.
+
+…But the situation is quite typical, it happens in practice. Tests pass, but the function works wrong. Our spec is imperfect. We need to add more use cases to it.
+
+Let’s add one more test to check that pow(3, 4) = 81.
+
+The principal difference is that when assert triggers an error, the it block immediately terminates. So, in the first variant if the first assert fails, then we’ll never see the result of the second assert.
+
+Making tests separate is useful to get more information about what’s going on, so the second variant is better.
+
+And besides that, there’s one more rule that’s good to follow.
+
+One test checks one thing.
+
+If we look at the test and see two independent checks in it, it’s better to split it into two simpler ones.
+
+So let’s continue with the second variant.
+
+Nested describe
+
+We’re going to add even more tests. But before that let’s note that the helper function makeTest and for should be grouped together. We won’t need makeTest in other tests, it’s needed only in for: their common task is to check how pow raises into the given power.
+
+Extending the spec
+
+The basic functionality of pow is complete. The first iteration of the development is done. When we’re done celebrating and drinking champagne – let’s go on and improve it.
+
+As it was said, the function pow(x, n) is meant to work with positive integer values n.
+
+To indicate a mathematical error, JavaScript functions usually return NaN. Let’s do the same for invalid values of n.

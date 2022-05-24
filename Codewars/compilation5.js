@@ -100,3 +100,19 @@ function tribonacci(signature, n) {
   return signature.slice(0, n); //return trib - length of n
 }
 
+
+// 8 - return the string w/len 4 
+const friend = (friends = []) => friends.filter((e) => e.length === 4);
+
+
+// 9 - return only the int type values
+function filter_list(l) {
+  return l.filter(e => typeof e === Number);
+}
+
+
+// 10 - remove repated consecutive words, keep if they are not consecutive
+var uniqueInOrder = (i) => {
+  // 
+};
+// ('AAAABBBCCDAABBB'), ['A','B','C','D','A','B']
