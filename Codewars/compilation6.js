@@ -30,7 +30,8 @@ function duplicateEncode(word = "") {
   });
   console.log(res);
 }
-duplicateEncode("(( @"); //help
+// duplicateEncode("(( @"); //help
+
 // ? regex res
 function duplicateEncodeRegex(word) {
   word = word.toLowerCase();
@@ -38,12 +39,13 @@ function duplicateEncodeRegex(word) {
     word.indexOf(m) == word.lastIndexOf(m) ? "(" : ")"
   );
 }
+
 // ? may watch later
 function duplicateEncodeRetro(word) {
-  var unique = "";
+  let unique = "";
 
   word = word.toLowerCase();
-  for (var i = 0; i < word.length; i++) {
+  for (let i = 0; i < word.length; i++) {
     if (word.lastIndexOf(word[i]) == word.indexOf(word[i])) {
       unique += "(";
     } else {
@@ -52,3 +54,47 @@ function duplicateEncodeRetro(word) {
   }
   return unique;
 }
+
+// 5 - change ["a","t"] C,G => ["t","a"] G,C
+function DNAStrand(dna = "") {
+  res = "";
+
+  dna.split("").forEach((e) => {
+    switch (e) {
+      case "A":
+        res += "T";
+        break;
+
+      case "T":
+        res += "A";
+        break;
+
+      case "C":
+        res += "G";
+        break;
+
+      case "G":
+        res += "C";
+        break;
+
+      default:
+        res += e;
+        break;
+    }
+  });
+  return res;
+}
+// ? better solution
+function DNAStrandBetter(dna) {
+  const pairs = {
+    A: "T",
+    T: "A",
+    C: "G",
+    G: "C",
+  };
+
+  return dna.replace(/./g, (e) => pairs[e]);
+  //! replace(/./g) is [].forEach but for strings !//
+}
+
+console.log(DNAStrandBetter("ATCTTAAG"));
