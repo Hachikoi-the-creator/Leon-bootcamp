@@ -3,12 +3,14 @@ var isSquare = function (n) {
   return Math.sqrt(n) % 1 == 0;
 };
 
+
 // 2 - easy dubs
 function find_average(array = []) {
   if (array.length == [].length) return 0;
 
   return array.reduce((a, b) => a + b) / array.length;
 }
+
 
 // 3 - given 2 word space separeted, return the initials of the person
 function abbrevName(name = "") {
@@ -17,6 +19,7 @@ function abbrevName(name = "") {
     .map((word) => word[0].toUpperCase())
     .join(".");
 }
+
 
 // 4 - if the letter appears more than once in the tring change it for ), ( otherwise
 function duplicateEncode(word = "") {
@@ -54,6 +57,7 @@ function duplicateEncodeRetro(word) {
   }
   return unique;
 }
+
 
 // 5 - change ["a","t"] C,G => ["t","a"] G,C
 function DNAStrand(dna = "") {
@@ -97,4 +101,18 @@ function DNAStrandBetter(dna) {
   //! replace(/./g) is [].forEach but for strings !//
 }
 
-console.log(DNAStrandBetter("ATCTTAAG"));
+
+// 6 - remove the num if it repeats more than N times
+function deleteNth(arr=[],n=0){
+    const myObj = {}
+
+    for (var i = Things.length - 1; i >= 0; i--) {
+        if (i in myObj) {
+            // do something
+        }
+        else {
+            
+        }
+    }
+}
+console.log([20,37,20,21])//, 1), [20,37,21]
