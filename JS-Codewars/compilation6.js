@@ -3,12 +3,14 @@ var isSquare = function (n) {
   return Math.sqrt(n) % 1 == 0;
 };
 
+
 // 2 - easy dubs
 function find_average(array = []) {
   if (array.length == [].length) return 0;
 
   return array.reduce((a, b) => a + b) / array.length;
 }
+
 
 // 3 - given 2 word space separeted, return the initials of the person
 function abbrevName(name = "") {
@@ -17,6 +19,7 @@ function abbrevName(name = "") {
     .map((word) => word[0].toUpperCase())
     .join(".");
 }
+
 
 // 4 - if the letter appears more than once in the tring change it for ), ( otherwise
 function duplicateEncode(word = "") {
@@ -54,6 +57,7 @@ function duplicateEncodeRetro(word) {
   }
   return unique;
 }
+
 
 // 5 - change ["a","t"] C,G => ["t","a"] G,C
 function DNAStrand(dna = "") {
@@ -97,6 +101,7 @@ function DNAStrandBetter(dna) {
   //! replace(/./g) is [].forEach but for strings !//
 }
 
+
 // 6 - if the string is beyond "m" take it as an error an return the amoun of error in the format 10/20 (10 errors out of 20 words).
 function printerError(str = "") {
   const alpha = [...Array(26)].map((_) => String.fromCharCode(i++), (i = 97))
@@ -127,6 +132,7 @@ function printerErrorUnicode(str = "") {
   return count + "/" + str.length;
 }
 
+
 // 7 - return a string whit all the words inside, reversed
 function reverseWords(str = "") {
   const allWordsArr = str.split(' ');
@@ -150,3 +156,20 @@ function reverseWordsV2(str = "") {
   return res.join` `;
 }
 
+
+// 8 - Get 2 words as input and return a word whit only letters from a-z whit no repeated letters
+function longest(s1 = "", s2 = "") {
+  bothWords = s1 + s2;
+  let res = [];
+
+  [...bothWords].forEach(item => {
+    if (!res.includes(item)) {
+      res.push(item);
+    }
+  });
+
+  return res.join``;
+}
+// ?Missed the sorted part lmao
+// make a set of the combination of the words, convert that set to an array, sort it, join it
+const longestReal = (s1, s2) => [...new Set(s1 + s2)].sort().join('');
