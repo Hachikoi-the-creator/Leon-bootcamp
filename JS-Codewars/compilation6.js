@@ -173,3 +173,31 @@ function longest(s1 = "", s2 = "") {
 // ?Missed the sorted part lmao
 // make a set of the combination of the words, convert that set to an array, sort it, join it
 const longestReal = (s1, s2) => [...new Set(s1 + s2)].sort().join('');
+
+
+// 9 - 3 or more == -20, 7 or more == -5; daily fee 40$
+function rentalCarCost(days = 0) {
+  if (days < 3) {
+    return days * 40;
+  }
+  else if (days < 7) {
+    return (days * 40) - 20;
+  }
+  else {
+    return (days * 40) - 50;
+  }
+}
+
+//? confusing ternary result
+const rentalCarCostTernary = d => d * 40 - ((d > 6) ? 50 : ((d > 2) ? 20 : 0));
+
+
+// 10 - return a sum of only the positive numbers in the array
+function positiveSum(arr = []) {
+  return arr.map(e => e > 0 ? e : 0).reduce((a, b) => a + b, 0);
+}
+
+//? single loop solution
+function positiveSumBetter(arr = []) {
+  return arr.reduce((a, b) => a + (b > 0 ? b : 0), 0);
+}
