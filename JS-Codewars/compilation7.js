@@ -19,3 +19,17 @@ function removeEveryOtherFiltered(arr) {
     return index % 2 === 0;
   });
 }
+
+
+// 2 - sum all the values exept the higest and lowest in value
+function sumArray(array = []) {
+  if (!array) return 0;
+
+  array.sort((a, b) => b - a);
+  array.shift();
+  array.pop();
+  return array.reduce((a, b) => a + b, 0);
+}
+
+// ? those dammed one liners lmao
+proSum = a => a ? a.sort((x, y) => x - y).slice(1, -1).reduce((s, e) => s + e, 0) : 0;
