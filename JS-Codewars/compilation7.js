@@ -33,3 +33,7 @@ function sumArray(array = []) {
 
 // ? those dammed one liners lmao
 proSum = a => a ? a.sort((x, y) => x - y).slice(1, -1).reduce((s, e) => s + e, 0) : 0;
+
+
+// 3 - convoluted function (retruns n+1, if e is not defined)
+const comboFunc = (num, func = x => x + 1) => func(num);
