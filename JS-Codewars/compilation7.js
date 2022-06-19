@@ -84,3 +84,22 @@ function isValidWalkGenius(walk) {
 
   return walk.length === 10 && count('n') == count('s') && count('w') == count('e');
 }
+
+// 5 - Double sum, find 2 number in a number array that returns the index of the numbers wich sum is the target num
+// X mmm naruhodo (doesn't naruhodo at all)
+function twoSum(numbers, target) {
+  for (let i = 0; i < numbers.length - 1; i++) {
+    for (let j = i + 1; j < numbers.length; j++) {
+      if (numbers[i] + numbers[j] === target) return [i, j];
+    }
+  }
+}
+
+
+// 6 - Detect an pangram (has all the letters from the alphabet)
+// X - just what was I even trying to do lmao (10+  lines)
+function isPangram(string) {
+  const alphabetList = [...'abcdefghijklmnopqrstuvwxyz'];
+
+  return alphabetList.every((letter) => string.toLowerCase().includes(letter));
+}
