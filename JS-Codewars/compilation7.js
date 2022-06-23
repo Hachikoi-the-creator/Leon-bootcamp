@@ -103,3 +103,17 @@ function isPangram(string) {
 
   return alphabetList.every((letter) => string.toLowerCase().includes(letter));
 }
+
+
+// 7 - return an array of numbers, self exaplantory code lul
+function countBy(leap = 0, limit = 0) {
+  const res = [];
+
+  for (let i = 1; i <= limit; i++) {
+    res.push(i * leap);
+  }
+
+  return res;
+}
+// Cooler whit Array Prototype
+const countByProto = (leap, limit) => [...Array(limit)].map((_, idx) => ++idx * leap);
