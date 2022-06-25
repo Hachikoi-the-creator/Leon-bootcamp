@@ -117,3 +117,11 @@ function countBy(leap = 0, limit = 0) {
 }
 // Cooler whit Array Prototype
 const countByProto = (leap, limit) => [...Array(limit)].map((_, idx) => ++idx * leap);
+
+// 8 - given an string of numbers, return the lowest and higest in a single string
+function highAndLow(numbers = "") {
+  // numbers = numbers.split` `.map(e => +e);
+  // no need to haave int to use Math.max/min
+  numbers = numbers.split` `;
+  return `${Math.max(...numbers)} ${Math.min(...numbers)}`;
+}
