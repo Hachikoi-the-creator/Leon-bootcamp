@@ -125,3 +125,14 @@ function highAndLow(numbers = "") {
   numbers = numbers.split` `;
   return `${Math.max(...numbers)} ${Math.min(...numbers)}`;
 }
+
+// 9 - return the sum of the 2 lowest numbers in the arr (REPEATED)
+function sumTwoSmallestNumbers(numbers = []) {
+  numbers.sort((a, b) => a - b);
+  return numbers[0] + numbers[1];
+}
+
+sumTwoSmallestNumbers([5, 8, 12, 19, 22]);
+
+// 10 - (half point) create a method to see if an string is all uppercase, lmfao I was doing self for python lmao
+String.prototype.isUpperCase = function () { return this == this.toUpperCase(); };
