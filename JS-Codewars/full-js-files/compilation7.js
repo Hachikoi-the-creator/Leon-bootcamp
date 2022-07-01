@@ -136,3 +136,4 @@ sumTwoSmallestNumbers([5, 8, 12, 19, 22]);
 
 // 10 - (half point) create a method to see if an string is all uppercase, lmfao I was doing self for python lmao
 String.prototype.isUpperCase = function () { return this == this.toUpperCase(); };
+
