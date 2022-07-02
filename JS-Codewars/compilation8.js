@@ -10,4 +10,16 @@ const number = (busStops = [[]]) => {
 
   return res;
 };
-console.log(number([[10, 0], [3, 5], [5, 8]]));//5
+
+
+// 2 - get middle string if "one"-> "n"; "four"-> "ou"
+function getMiddle(str = "") {
+  if (str.length % 2 === 0) {
+    return (str[str.length / 2 - 1] + str[str.length / 2]);
+  } else {
+    return (str[Math.floor(str.length / 2)]);
+  }
+}
+
+console.log(getMiddle("tesa"));
+console.log(getMiddle("tesaing"));
