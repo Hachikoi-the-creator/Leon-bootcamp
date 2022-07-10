@@ -21,5 +21,16 @@ function getMiddle(str = "") {
   }
 }
 
-console.log(getMiddle("tesa"));
-console.log(getMiddle("tesaing"));
+//3 - Return the string separated in pairs, if the str is not pair, add an _ at the end
+function solution(str){
+  if(str.length % 2 !== 0) str +="_"
+  console.log(str)
+  
+  let res = []
+
+  for (let i = 0; i < str.length; i+=2) {
+    res.push(str[i]+str[i+1])
+  }
+
+  return res
+}
