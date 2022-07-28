@@ -44,3 +44,10 @@ function arrayDiff(arrA = [], arrB = []) {
   });
   return res;
 }
+
+// 5 - if name starts whit r, you r playing
+function areYouPlayingBanjo(name="") {
+  return name.charAt(0).toLowerCase()  == "r" ? 
+  `${name} plays banjo`:
+  `${name} does not play banjo`
+ }
