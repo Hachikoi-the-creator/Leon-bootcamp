@@ -67,3 +67,10 @@ function rgb(r = 0, g = 0, b = 0) {
   };
   return toHex(r) + toHex(g) + toHex(b);
 }
+
+// 6 - if name starts whit r, you r playing
+function areYouPlayingBanjo(name = "") {
+  return name.charAt(0).toLowerCase() == "r"
+    ? `${name} plays banjo`
+    : `${name} does not play banjo`;
+}
