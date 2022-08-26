@@ -1,15 +1,8 @@
-# Mata Contratos
-### The popular open-source contract for web professionals by [Stuff & Nonsense](https://stuffandnonsense.co.uk/) Edited by [Hachikoi](#add-link-later:D)
+# Contrato
 
-* Originally published: 23rd December 2008
-* Revised date: 02 March 2022
-* [Original post](http://stuffandnonsense.co.uk/projects/contract-killer/)
+**Entre** Adan Moreno
 
-* * *
-
-**Entre** [nombre de la compañía]
-
-**Y** [nombre del cliente].
+**Y** ________________________
 
 ### Resumen:
 
@@ -17,15 +10,32 @@ Nosotros siempre haremos todo los posible para satisfacer tus necesidades y expe
 
 ### Entonces:
 
-Tu **nombre del cliente** localizado en **dirección del cliente** (“Tu”) nos estas contratando a nosotros **nombre de la compañía** (“Nosotros”) para:
+Tu __________________________  (“Tu”) nos estas contratando a nosotros **8koi media** (“Nosotros”) para:
 
-- **Diseñar y crear un sitio web**
+- _________________________________________________________________________________
+
+- _________________________________________________________________________________
+
+- _________________________________________________________________________________
+
+- _________________________________________________________________________________
+
+- _________________________________________________________________________________
+
+- _________________________________________________________________________________
+
+- _________________________________________________________________________________
+
+- _________________________________________________________________________________
+
+- _________________________________________________________________________________
+
 
 Por el precio estimado de **total** como descrito en el correo previo
 
 Claro que es un poco más complicado, pero lo desglosaremos más adelante
 
-### What do both parties agree to?
+### ¿Qué acuerdan ambas partes?
 
 **Tu**: Tú tienes la autoridad en entrar este contrato en representación propia, su compañía u organización. Tu nos brindaras el contenido e información necesaria que te pidamos, para completar este proyecto. Tu harás esto cuando te lo pidamos y de la forma en la que te lo pidamos. Tu revisaras, darás retroalimentación y aprobaras nuestro trabajo en tiempo y forma. Fechas limites funcionan en ambas direcciones, así que definiremos fechas límite juntos. También aceptas realizar el pago acordado en tiempo y forma estipulado al final de este contrato.
 
@@ -68,6 +78,7 @@ Android: Google Chrome en un Emulador Android
 No haremos pruebas en BlackBerry, Opera Mini/Mobile, dispositivos específicos Android, Windows u otros navegadores móviles. Si requieres este servicio podemos acordar un presupuesto aparte.
 
 ### Soporte técnico
+
 No somos una compañía de alojamiento web, por lo tanto, no ofrecemos servicios como alojamiento web, email u otros relacionados. Puede que ya cuentes con alojamiento profesional o incluso poseas alojamiento en tu domicilio; de ser así, genial. Si no, podemos proveer una cuenta en nuestras paginas favoritas de alojamiento, cualquier software de estadísticas aparte como estadísticas Google seria con un costo aparte, luego las actualizaciones, administración del software seria por tu cuenta
 
 ### Optimización del motor de búsqueda (SEO)
@@ -112,11 +123,38 @@ Nos encanta presumir nuestro trabajo, por lo que nos reservamos el derecho de mo
 Estamos seguros que tan importante es para un pequeño negocio como el suyo pagar las facturas que le enviamos prontamente. 
 También estamos seguros que le gustaría seguir como amigos, por lo tanto usted se compromete con cumplir el siguiente calendario de pagos.
 
-**Payment details**
+**Detalles del pago**
 
-**Payment schedule**
+- _________________________________________________________________________________
 
-Nosotros enviamos futuras de forma electrónica. Nuestros términos de pago son los siguientes [number-days] a partir de la fecha de la factura por sistema de pagos internacionales BACS o SWIFT. Todas las facturas son escritas en [MXN] 
+- _________________________________________________________________________________
+
+- _________________________________________________________________________________
+
+- _________________________________________________________________________________
+
+- _________________________________________________________________________________
+
+- _________________________________________________________________________________
+
+
+
+**Calendario de pagos**
+
+- _________________________________________________________________________________
+
+- _________________________________________________________________________________
+
+- _________________________________________________________________________________
+
+- _________________________________________________________________________________
+
+- _________________________________________________________________________________
+
+- _________________________________________________________________________________
+
+
+Nosotros enviamos facturas de forma electrónica. Nuestros términos de pago son los siguientes [number-days] a partir de la fecha de la factura por sistema de pagos internacionales BACS o SWIFT. Todas las facturas son escritas en [MXN] 
 y los pagos serán realizados al tipo de conversión equivalente en la fecha de la transferencia.
 
 Usted está de acuerdo con pagar cargos asociados con trasferencias internacionales de fondos. La información apropiada para realizar el pago será enviada justo con la factura en cuestión. Nos reservamos el derecho de cobrar interés en todas las deudas tardías con un interés del [dunno smtn like 20%] por mes o parte del mes.
@@ -134,14 +172,16 @@ A pesar de que el lenguaje es simple, las intenciones son serias y este contrato
 Ah y no olvidarse de esos tipos con perros grandes.
 
 ### La línea punteada
+---
 
-Firmado por y en nombre de **nombre de la compañía**
-
-
-Firmado por y en nombre de **nombre del cliente**
+Firmado por y en nombre de **8koi media**
 
 
-Fecha **date**
 
-Everyone should sign above and keep a copy for their records.
+Firmado por y en nombre de _______________________
 
+
+
+Fecha ____ ____ ____
+
+Todos deben firmar arriba y guardar una copia para sus archivos.

@@ -44,3 +44,26 @@ function arrayDiff(arrA = [], arrB = []) {
   });
   return res;
 }
+
+// 5 - Given the rgb values return the same color but in HEX
+// 255, 255, 255 => #ffffff
+//* ? Todo later: if the values 0,1,2 repeat, just return them once
+function rgbTrue(r = 0, g = 0, b = 0) {
+  // check if num > 255
+  // const first = r.toString(16);
+  return `#${r.toString(16)}${g.toString(16)}${b.toString(16)}`;
+}
+
+// 5.5 weird challenge - dont get it, im slepy
+function rgb(r = 0, g = 0, b = 0) {
+  const toHex = (d) => {
+    if (d < 0) {
+      return "00";
+    }
+    if (d > 255) {
+      return "FF";
+    }
+    return ("0" + Number(d).toString(16)).slice(-2).toUpperCase();
+  };
+  return toHex(r) + toHex(g) + toHex(b);
+}
